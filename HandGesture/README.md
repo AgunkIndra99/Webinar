@@ -12,4 +12,4 @@ Project ini merupakan modifikasi dari karya yang telah dilakukan oleh [sandeepmi
 # Materi Tutorial
 Berikut beberapa tutorial yang bisa dipelajari:
 * [Apa itu Google Colab](https://tutorkeren.com/artikel/deep-learning-apa-itu-google-colab.htm)
-* [Instalasi Pustaka TensorFlow Lite pada Arduino](https://tutorkeren.com/artikel/deep-learning-apa-itu-google-colab.htm)
+* [Instalasi Pustaka TensorFlow Lite pada Arduino](https://tutorkeren.com/artikel/deep-learning-instalasi-pustaka-tensorflow-lite-pada-arduino.htm)
