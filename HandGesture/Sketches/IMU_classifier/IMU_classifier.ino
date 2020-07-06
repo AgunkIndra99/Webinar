@@ -20,10 +20,11 @@
 
 #include <Arduino_LSM9DS1.h>
 
+// Update Lokasi pustaka TensorFlow Lite menyesuaikan dengan versi 2.1.0-ALPHA
 #include <TensorFlowLite.h>
-#include <tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h>
-#include <tensorflow/lite/experimental/micro/micro_error_reporter.h>
-#include <tensorflow/lite/experimental/micro/micro_interpreter.h>
+#include <tensorflow/lite/micro/all_ops_resolver.h>
+#include <tensorflow/lite/micro/micro_error_reporter.h>
+#include <tensorflow/lite/micro/micro_interpreter.h>
 #include <tensorflow/lite/schema/schema_generated.h>
 #include <tensorflow/lite/version.h>
 
@@ -40,7 +41,7 @@ tflite::MicroErrorReporter tflErrorReporter;
 // pull in all the TFLM ops, you can remove this line and
 // only pull in the TFLM ops you need, if would like to reduce
 // the compiled size of the sketch.
-tflite::ops::micro::AllOpsResolver tflOpsResolver;
+tflite::AllOpsResolver tflOpsResolver;
 
 const tflite::Model* tflModel = nullptr;
 tflite::MicroInterpreter* tflInterpreter = nullptr;
