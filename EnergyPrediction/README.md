@@ -13,8 +13,8 @@ Dataset yang digunakan pada Proejct ini dapat diunduh melalui laman [UCI Machine
 5. Unduh semua file dalam repositori ini.
 6. Latih model. Jalankan program untuk membangun dan melatih model berikut [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kusuma86/Webinar/blob/master/EnergyPrediction/Train/Webinar_PrediksiEnergi.ipynb). Hasil dari program ini adalah model TensorFlow dan TensorFlow Lite. Lihat Folder [Pretrained](https://github.com/kusuma86/Webinar/tree/master/EnergyPrediction/Pretrained).
 7. Jika Anda tidak dapat menyelesaikan langkah 1-6, maka langsunglah unduh file **modelEnergyPrediction.tflite** melalui halaman repositori ini. Hal ini dikarenakan tujuan akhir dari langkah-langkah di atas adalah untuk mendapatkan file modelEnergyPrediction.tflite ini, yang nantinya akan dieksekusi pada Raspberry Pi.
-8. Tempatkan modelEnergyPrediction.tflite, data_x.csv, dan data_y.csv pada folder [Data](https://github.com/kusuma86/Webinar/tree/master/EnergyPrediction/Data)
-9. Jalankan energyPrediction.py yang dapat diperoleh dari folder [Raspi](https://github.com/kusuma86/Webinar/tree/master/EnergyPrediction/Raspi).
+8. Tempatkan modelEnergyPrediction.tflite, data_x.csv, dan data_y.csv pada folder [Data](https://github.com/kusuma86/Webinar/tree/master/EnergyPrediction/Data) ke folder virtual environment pada Raspberry Pi.
+9. Aktifkan virtual environment dan lalankan energyPrediction.py yang dapat diperoleh dari folder [Raspi](https://github.com/kusuma86/Webinar/tree/master/EnergyPrediction/Raspi).
 
 ## Referensi:
 * L. M. Candanedo, V. Feldheim, and D. Deramaix, “Data driven prediction models of energy use of appliances in a low-energy house,” Energy Build., vol. 140, pp. 81–97, Apr. 2017, doi: 10.1016/j.enbuild.2017.01.083.
