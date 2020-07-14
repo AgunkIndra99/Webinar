@@ -64,10 +64,20 @@ try:
         energy_model.set_tensor(input_details[0]['index'], input_data)
         energy_model.invoke()
         output_data = energy_model.get_tensor(output_details[0]['index'])
-        printDataPred = np.squeeze(output_data.round(2))
+        printDataPred = round(float(np.squeeze(output_data)), 2)
+        input_data = input_data.round(6)
         printDataAktual = np.squeeze(data_test_y[i])
-        print(f'Aktual: {printDataAktual} --- Prediksi: {printDataPred}')
-        time.sleep(1.0)
+        
+        # print data input, nilai prediksi dan nilai aktual
+        print(f'Input Data : \n {input_data}')
+        print('')
+        print(f'Hasil Prediksi: {printDataPred} --- Nilai Aktual: {printDataAktual}')        
+        print('--------------------------------------------------------------------')
+        
+        # jeda 2 detik
+        time.sleep(2.0)
+        
+        # naikkan index
         i = i + 1
         
         # Ulangi jika data uji lebih dari 3500
